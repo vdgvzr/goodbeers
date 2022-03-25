@@ -1,0 +1,22 @@
+dateModified: 1648165095
+email:
+  fromEmail: shaunlindsley@gmail.com
+  fromName: Goodbeers
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0a52d1f1-197c-4c0a-a6db-69018f4353e1: Common # Common
+    001221df-1213-4667-90cf-4e5cef5c3883: Goodbeers # Goodbeers
+    d443204d-b01f-4a2a-bc62-3a486242edc2: Goodbeers # Goodbeers
+system:
+  edition: solo
+  live: true
+  name: Goodbeers
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
