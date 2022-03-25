@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 4
+template: 't&c.twig'
+uriParts:
+  - terms-and-conditions
+uriPattern: terms-and-conditions
