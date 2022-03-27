@@ -1,14 +1,16 @@
 {% extends "index.twig" %}
 
 {% block content %}
-    <section class="hero" style="background-image: linear-gradient(to top, transparent, black), url('static/images/index_beer.jpg')">
+    {% set image = entry.heroImage.one() %}
+
+    <section class="hero" style="background-image: linear-gradient(to top, transparent, black), url('{{ image.url }}')">
         <div class="hero-content">
             <div class="container">
                 <div class="row">
                     <div class="col-3"></div>
 
                     <div class="col-6">
-                        <h1>Welcome to GOOD<span class="text-warning">BEERS <i class="fa-solid fa-beer-mug-empty"></i></span>, Inc.</h1>
+                        <h1>{{ entry.heroTitle }}</h1>
                     </div>
 
                     <div class="col-3"></div>

@@ -1,5 +1,5 @@
 fieldLayouts:
-  18e695dc-b30b-4dd7-ba69-70191b75b119:
+  58e59833-acb4-471c-b270-8e1d0b391c73:
     tabs:
       -
         elements:
@@ -33,7 +33,7 @@ hasUrls: true
 name: Uploads
 settings:
   path: $ASSET_BASE_PATH
-sortOrder: 1
+sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
