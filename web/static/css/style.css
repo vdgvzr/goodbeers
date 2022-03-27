@@ -1,9 +1,13 @@
+* {
+    position: relative;
+}
+
 html {
     background-color: black;
 }
 
 .wrapper {
-    min-height: calc(100vh - 155px);
+    min-height: calc(100vh - 80.5px);
     background-color: black;
 }
 
@@ -23,9 +27,8 @@ html {
 
 
 .footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: black;
 }
 
 /* Misc --------------------- */
