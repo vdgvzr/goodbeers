@@ -11,6 +11,12 @@ html {
 }
 
 
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
 .footer{
     position: absolute;
     bottom: 0;
