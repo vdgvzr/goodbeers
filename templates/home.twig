@@ -3,24 +3,34 @@
 {% block content %}
     <section class="hero" style="background-image: linear-gradient(to top, transparent, black), url('static/images/index_beer.jpg')">
         <div class="hero-content">
-        <h1>Welcome to Goodbeers, Inc.</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6">
+                        <h1>Welcome to GOOD<span class="text-warning">BEERS <i class="fa-solid fa-beer-mug-empty"></i></span>, Inc.</h1>
+                    </div>
+
+                    <div class="col-3"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4"></div>
+
+                <div class="col-4 p-4 home-text text-center">
+                    <p class="text-white">
+                        We are Scotland’s premier supplier of craft beers, ales, stouts, and lagers. 
+                        If you have a customer enquiry, please 
+                        <a class="link-unstyled text-warning" href="contact">contact us</a>, 
+                        or you can learn more about our 
+                        <a class="link-unstyled text-warning" href="about">history</a> or 
+                        <a class="link-unstyled text-warning" href="#">products</a>.
+                    </p>
+                </div>
+
+                <div class="col-4"></div>
+            </div>
         </div>
     </section>
 {% endblock %}
-
-
-{# <div class="h-100 w-75 mx-auto p-3">
-        <div class="row">
-            <div class="col-12 center block">
-                <p class="text-center">
-                    Welcome to Goodbeers, Inc. 
-                    We are Scotland’s premier supplier of craft beers, ales, stouts, and lagers. 
-                    If you have a customer enquiry, please 
-                    <a class="link-unstyled text-warning" href="contact">contact us</a>, 
-                    or you can learn more about our 
-                    <a class="link-unstyled text-warning" href="about">history</a> or 
-                    <a class="link-unstyled text-warning" href="#">products</a>.
-                </p>
-            </div>
-        </div>
-    </div> #}
