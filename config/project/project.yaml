@@ -1,4 +1,4 @@
-dateModified: 1648403662
+dateModified: 1648404930
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -12,8 +12,12 @@ meta:
     0538fb61-54f5-42ee-b316-03f27084d446: Uploads # Uploads
     001221df-1213-4667-90cf-4e5cef5c3883: Goodbeers # Goodbeers
     257443c7-9a91-4a24-89c2-0607e7026ea7: Home # Home
+    bd3677cb-49d9-4b08-b910-8746c21c75de: 'About Page' # About Page
+    cb39b36a-8a23-4503-9931-4532af39ec4c: About # About
+    d2da1be4-085a-478a-82c1-62de45529f0e: 'About Text' # About Text
     d443204d-b01f-4a2a-bc62-3a486242edc2: Goodbeers # Goodbeers
     d784302c-b13c-4581-9bbf-3689c3f72723: Home # Home
+    e05f19a6-0f3f-4fc4-8bbd-b4f5b1f6b6d3: About # About
 system:
   edition: solo
   live: true

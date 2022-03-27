@@ -1,0 +1,19 @@
+columnSuffix: cppsohlz
+contentColumnType: text
+fieldGroup: bd3677cb-49d9-4b08-b910-8746c21c75de # About Page
+handle: aboutText
+instructions: ''
+name: 'About Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

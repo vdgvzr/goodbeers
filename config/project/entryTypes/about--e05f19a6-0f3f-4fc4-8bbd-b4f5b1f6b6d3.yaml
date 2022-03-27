@@ -1,0 +1,24 @@
+fieldLayouts:
+  56757bc6-bc95-4984-b0b7-0b7b5ec34dd6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d2da1be4-085a-478a-82c1-62de45529f0e # About Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: About
+        sortOrder: 1
+handle: about
+hasTitleField: false
+name: About
+section: cb39b36a-8a23-4503-9931-4532af39ec4c # About
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
