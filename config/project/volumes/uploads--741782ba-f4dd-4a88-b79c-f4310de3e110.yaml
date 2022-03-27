@@ -1,5 +1,5 @@
 fieldLayouts:
-  a46a63f8-7a29-4906-8988-a383f7ec44b9:
+  18e695dc-b30b-4dd7-ba69-70191b75b119:
     tabs:
       -
         elements:
@@ -23,16 +23,18 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: home
-hasTitleField: false
-name: Home
-section: ca479202-c074-45ee-9f04-f9e72652296c # Home
+handle: uploads
+hasUrls: true
+name: Uploads
+settings:
+  path: $ASSET_BASE_PATH
 sortOrder: 1
-titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: $ASSET_BASE_URL
