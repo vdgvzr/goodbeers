@@ -23,17 +23,17 @@
 
     <body>
         <!-- Navbar -->
-        {% include "navbar.twig" %}
+        {% include "includes/navbar.twig" %}
 
         <!-- Content -->
-        <div class="container my-5">
+        <div class="mt-4">
             {% block content %}
             {% endblock %}
         </div>
         
         <!-- Footer -->
-        <div class="container">
-            {% include "footer.twig" %}
+        <div class=" bg-white">
+        {% include "includes/footer.twig" %}
         </div>
     </body>
 
