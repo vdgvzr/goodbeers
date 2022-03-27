@@ -1,0 +1,23 @@
+{% extends "index.twig" %}
+
+{% block content %}
+    {% set stockists = entry.stockists.all() %}
+
+    <section>
+        <div class="hero-content">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6">
+                        {% for stockist in stockists %}
+                            <p class="text-white">{{ stockist.businessName }}</p>
+                        {% endfor %}
+                    </div>
+
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

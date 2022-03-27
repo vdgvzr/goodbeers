@@ -1,4 +1,4 @@
-dateModified: 1648404930
+dateModified: 1648407648
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -7,17 +7,40 @@ meta:
   __names__:
     0a52d1f1-197c-4c0a-a6db-69018f4353e1: Common # Common
     0e7b6f1d-8852-422b-a217-3ac3cd450215: 'Hero Title' # Hero Title
+    1a820693-ca56-4744-8239-7cd3fa85ce9d: Postcode # Postcode
+    4e7404e0-7022-4818-8d11-4ffc66b384c4: Longitude # Longitude
+    4f86acec-2e17-45fe-b9a1-441f3a9bcb23: Notes # Notes
+    6d6752d8-ce94-479f-930c-20cd4bbfd564: Beer # Beer
+    8fc35b22-8fcb-4196-b4ff-2256d808ac48: 'Address Line 1' # Address Line 1
     014ddf4d-4c06-4fe8-b8ed-3191a53fbf0a: 'Home Page' # Home Page
+    40e0c894-65a1-41b1-9c36-a7023d0d9939: Formats # Formats
+    60b20676-275f-4452-a23b-f1ca298af319: Stockists # Stockists
+    81d6d002-fc67-491f-b8b6-63c8e58da71d: Stockists # Stockists
+    82bbc307-b58a-43ff-8e42-4b79c7d48152: 'Address Line 3' # Address Line 3
+    160e55f6-25ba-4d21-a6d7-52b34dbea2d6: Products # Products
     179f0ea6-bca7-43ae-add7-7648376d300d: 'Hero Image' # Hero Image
     0538fb61-54f5-42ee-b316-03f27084d446: Uploads # Uploads
+    641e13f3-9958-42c0-88cb-a2f2e7fa7623: Products # Products
     001221df-1213-4667-90cf-4e5cef5c3883: Goodbeers # Goodbeers
+    5922fdec-bff9-41b0-add7-f3c5f3be524e: ABV # ABV
     257443c7-9a91-4a24-89c2-0607e7026ea7: Home # Home
+    322807ae-44c8-457a-a5cc-7f5f5c926f2b: 'Business Name' # Business Name
+    648356bb-3e19-4831-b049-ff4833298ddb: Beer # Beer
+    a81c4e2e-fbff-48e0-8a5d-7c73a22ebf66: Pairings # Pairings
+    ab9eeee8-dea7-4ca9-9b2f-6d69b49f858e: Products # Products
+    ae71d09c-3bb9-4136-8afb-1d7ca8a8d9dd: Stockists # Stockists
     bd3677cb-49d9-4b08-b910-8746c21c75de: 'About Page' # About Page
     cb39b36a-8a23-4503-9931-4532af39ec4c: About # About
     d2da1be4-085a-478a-82c1-62de45529f0e: 'About Text' # About Text
+    d8ead866-2a26-4f70-bd16-279313dcdb3b: Stockist # Stockist
+    d9148d8f-9152-4bd3-9454-6458ce2f4f17: Stockists # Stockists
     d443204d-b01f-4a2a-bc62-3a486242edc2: Goodbeers # Goodbeers
     d784302c-b13c-4581-9bbf-3689c3f72723: Home # Home
     e05f19a6-0f3f-4fc4-8bbd-b4f5b1f6b6d3: About # About
+    eb37c702-c55e-4a89-8d81-aee5cd0999dc: 'Address Line 2' # Address Line 2
+    efe6aa1d-51bd-4295-b506-04b372bd4b6c: 'Address Line 4' # Address Line 4
+    f8b67eb1-be12-4350-862a-876bc6d5df0b: Products # Products
+    fee8c7d0-c6d8-4b83-93f8-610209b7316a: Latitude # Latitude
 system:
   edition: solo
   live: true

@@ -1,0 +1,244 @@
+field: 81d6d002-fc67-491f-b8b6-63c8e58da71d # Stockists
+fieldLayouts:
+  d2665cf1-ba89-4693-8bc8-6d518381687c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 322807ae-44c8-457a-a5cc-7f5f5c926f2b # Business Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8fc35b22-8fcb-4196-b4ff-2256d808ac48 # Address Line 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eb37c702-c55e-4a89-8d81-aee5cd0999dc # Address Line 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 82bbc307-b58a-43ff-8e42-4b79c7d48152 # Address Line 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: efe6aa1d-51bd-4295-b506-04b372bd4b6c # Address Line 4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1a820693-ca56-4744-8239-7cd3fa85ce9d # Postcode
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fee8c7d0-c6d8-4b83-93f8-610209b7316a # Latitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4e7404e0-7022-4818-8d11-4ffc66b384c4 # Longitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1a820693-ca56-4744-8239-7cd3fa85ce9d: # Postcode
+    columnSuffix: hlnxuryx
+    contentColumnType: text
+    fieldGroup: null
+    handle: postcode
+    instructions: ''
+    name: Postcode
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4e7404e0-7022-4818-8d11-4ffc66b384c4: # Longitude
+    columnSuffix: qcjbjzcm
+    contentColumnType: text
+    fieldGroup: null
+    handle: longitude
+    instructions: ''
+    name: Longitude
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8fc35b22-8fcb-4196-b4ff-2256d808ac48: # Address Line 1
+    columnSuffix: tpyoumnn
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine1
+    instructions: ''
+    name: 'Address Line 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  82bbc307-b58a-43ff-8e42-4b79c7d48152: # Address Line 3
+    columnSuffix: jwmsgchy
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine3
+    instructions: ''
+    name: 'Address Line 3'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  322807ae-44c8-457a-a5cc-7f5f5c926f2b: # Business Name
+    columnSuffix: ztkexqva
+    contentColumnType: text
+    fieldGroup: null
+    handle: businessName
+    instructions: ''
+    name: 'Business Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  eb37c702-c55e-4a89-8d81-aee5cd0999dc: # Address Line 2
+    columnSuffix: fcsmmkil
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine2
+    instructions: ''
+    name: 'Address Line 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  efe6aa1d-51bd-4295-b506-04b372bd4b6c: # Address Line 4
+    columnSuffix: wbqaixfn
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine4
+    instructions: ''
+    name: 'Address Line 4'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fee8c7d0-c6d8-4b83-93f8-610209b7316a: # Latitude
+    columnSuffix: pmpueapq
+    contentColumnType: text
+    fieldGroup: null
+    handle: latitude
+    instructions: ''
+    name: Latitude
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: stockist
+name: Stockist
+sortOrder: 1
