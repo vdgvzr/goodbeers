@@ -22,3 +22,28 @@ html {
     bottom: 0;
     width: 100%;
 }
+
+/* Misc --------------------- */
+ul {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-text {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+.footer-text {
+        font-size: 9px;
+    }
+}
