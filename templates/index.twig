@@ -22,19 +22,20 @@
     {% endblock %}
 
     <body>
-        <!-- Navbar -->
-        {% include "includes/navbar.twig" %}
+        <div class="wrapper">
+            <!-- Navbar -->
+            {% include "includes/navbar.twig" %}
 
-        <!-- Content -->
-        <div class="container">
-            {% block content %}
-            {% endblock %}
+            <!-- Content -->
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
         </div>
-        
+            
         <!-- Footer -->
-        <div class=" bg-white">
         {% include "includes/footer.twig" %}
-        </div>
+        
     </body>
 
     {% block js %}
