@@ -1,7 +1,7 @@
 {% extends "index.twig" %}
 
 {% block content %}
-    {% set stockists = entry.stockists.all() %}
+    {% set stockists = craft.entries.section('stockists').all() %}
 
     <section>
         <div class="container hero-content">

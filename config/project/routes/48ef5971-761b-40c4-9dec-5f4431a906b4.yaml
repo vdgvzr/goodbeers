@@ -1,6 +1,6 @@
 siteUid: null
 sortOrder: 5
-template: products.twig
+template: products/index.twig
 uriParts:
   - products
 uriPattern: products

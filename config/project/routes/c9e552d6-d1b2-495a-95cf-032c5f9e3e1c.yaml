@@ -1,6 +1,6 @@
 siteUid: null
 sortOrder: 6
-template: stockists.twig
+template: stockists/index.twig
 uriParts:
   - stockists
 uriPattern: stockists

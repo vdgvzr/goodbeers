@@ -1,0 +1,27 @@
+columnSuffix: vgstnumr
+contentColumnType: text
+fieldGroup: ab9eeee8-dea7-4ca9-9b2f-6d69b49f858e # Products
+handle: formats
+instructions: ''
+name: Formats
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

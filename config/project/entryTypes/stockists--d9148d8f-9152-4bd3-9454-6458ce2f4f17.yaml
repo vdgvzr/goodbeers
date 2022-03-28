@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 81d6d002-fc67-491f-b8b6-63c8e58da71d # Stockists
+            fieldUid: 81d6d002-fc67-491f-b8b6-63c8e58da71d
             instructions: null
             label: null
             required: false

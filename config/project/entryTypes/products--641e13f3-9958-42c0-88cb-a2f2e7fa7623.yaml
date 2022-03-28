@@ -27,7 +27,43 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f8b67eb1-be12-4350-862a-876bc6d5df0b # Products
+            fieldUid: 92b3ebeb-ebb3-4e3b-85a8-f05acab94062 # Beer Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e3f066a4-0402-4ac2-9111-287836c1f133 # Notes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 14d9cf8b-728a-4578-bb54-b5861573e02c # Pairings
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 89c3f1d4-c85c-4c34-aca1-6b0942d38a0a # Formats
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af45c88a-1b6e-4292-9c26-57f1ccd763a9 # ABV
             instructions: null
             label: null
             required: false

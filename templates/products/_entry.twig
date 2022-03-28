@@ -1,0 +1,17 @@
+{% extends 'index.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="content-column">
+            <div class="my-auto text-white text-center">
+                <h1 class=" my-auto">{{ entry.beerName }}</h1>
+
+                <p class="card-text">{{ entry.notes }}</p>
+
+                <h6 class="card-subtitle mb-2">Pair With:</h6>
+
+                <p class="card-text">{{ entry.pairings }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
