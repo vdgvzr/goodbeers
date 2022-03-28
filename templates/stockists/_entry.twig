@@ -1,0 +1,21 @@
+{% extends 'index.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="content-column">
+            <div class="my-auto text-white text-center">
+                <h1 class=" my-auto">{{ entry.businessName }}</h1>
+
+                <p class="card-text">{{ entry.addressLine1 }}</p>
+
+                <p class="card-text">{{ entry.addressLine2 }}</p>
+
+                <p class="card-text">{{ entry.addressLine3 }}</p>
+
+                <p class="card-text">{{ entry.addressLine4 }}</p>
+
+                <p class="card-text">{{ entry.postcode }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

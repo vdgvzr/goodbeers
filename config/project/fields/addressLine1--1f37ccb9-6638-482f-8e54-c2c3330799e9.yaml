@@ -1,0 +1,19 @@
+columnSuffix: pseorrpc
+contentColumnType: text
+fieldGroup: ae71d09c-3bb9-4136-8afb-1d7ca8a8d9dd # Stockists
+handle: addressLine1
+instructions: ''
+name: 'Address Line 1'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

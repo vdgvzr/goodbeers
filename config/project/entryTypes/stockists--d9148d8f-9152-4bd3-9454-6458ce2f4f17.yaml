@@ -27,7 +27,70 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 81d6d002-fc67-491f-b8b6-63c8e58da71d
+            fieldUid: ec913814-e9b2-441c-8f96-168a25de9f7c # Business Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1f37ccb9-6638-482f-8e54-c2c3330799e9 # Address Line 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0debd8c1-3838-4762-853d-ce3e6dc29aff # Address Line 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: afd7c90b-3986-44dd-b82f-e5c4703f64d3 # Address Line 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c472333c-33e7-43a6-a17b-bc16bb8892db # Address Line 4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: be6628a8-554b-4e47-9cf8-bd40a560a40d # Postcode
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 36ee42f8-bd2f-4175-966b-f760864c5f63 # Latitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9a42ca2a-2140-4bb9-959a-0b38b5135aa5 # Longitude
             instructions: null
             label: null
             required: false
