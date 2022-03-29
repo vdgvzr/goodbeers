@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: results
+name: Results
+propagationMethod: all
+siteSettings:
+  d443204d-b01f-4a2a-bc62-3a486242edc2: # Goodbeers
+    enabledByDefault: true
+    hasUrls: true
+    template: search/results.twig
+    uriFormat: results
+type: single

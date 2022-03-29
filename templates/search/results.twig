@@ -1,0 +1,26 @@
+{% extends 'index.twig' %}
+
+{% block content %}
+    <div class="container text-white">
+        <h1>Search Results</h1>
+
+        {% set query = craft.app.request.getQueryParam('q') %}
+        {% set stockists = craft.entries.search(query).all() %}
+
+        {% if query %}
+            {% if stockists|length %}
+                <p>{{ stockists|length }} results:</p>
+
+                <ul>
+                    {% for stockist in stockists %}
+                        <li><a href="{{ stockist.slug }}">{{ stockist.businessName }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>Your search for “{{ query }}” didn’t return any results.</p>
+            {% endif %}
+        {% else %}
+                <p>Please fill in one of the search fields</p>
+        {% endif %}
+    </div>
+{% endblock %}

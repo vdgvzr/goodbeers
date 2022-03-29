@@ -1,4 +1,4 @@
-dateModified: 1648498458
+dateModified: 1648591719
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -13,6 +13,7 @@ meta:
     4e7404e0-7022-4818-8d11-4ffc66b384c4: Longitude # Longitude
     4f86acec-2e17-45fe-b9a1-441f3a9bcb23: Notes # Notes
     6d6752d8-ce94-479f-930c-20cd4bbfd564: Beer # Beer
+    6efbbb72-054e-4a73-8d4d-088e14e3d71e: Results # Results
     8fc35b22-8fcb-4196-b4ff-2256d808ac48: 'Address Line 1' # Address Line 1
     9a42ca2a-2140-4bb9-959a-0b38b5135aa5: Longitude # Longitude
     14d9cf8b-728a-4578-bb54-b5861573e02c: Pairings # Pairings
@@ -29,6 +30,7 @@ meta:
     641e13f3-9958-42c0-88cb-a2f2e7fa7623: Products # Products
     001221df-1213-4667-90cf-4e5cef5c3883: Goodbeers # Goodbeers
     5922fdec-bff9-41b0-add7-f3c5f3be524e: ABV # ABV
+    22973b4e-37e3-464f-a784-65614b55a523: 'Beers Stocked' # Beers Stocked
     257443c7-9a91-4a24-89c2-0607e7026ea7: Home # Home
     322807ae-44c8-457a-a5cc-7f5f5c926f2b: 'Business Name' # Business Name
     a81c4e2e-fbff-48e0-8a5d-7c73a22ebf66: Pairings # Pairings
@@ -36,6 +38,7 @@ meta:
     ae71d09c-3bb9-4136-8afb-1d7ca8a8d9dd: Stockists # Stockists
     af45c88a-1b6e-4292-9c26-57f1ccd763a9: ABV # ABV
     afd7c90b-3986-44dd-b82f-e5c4703f64d3: 'Address Line 3' # Address Line 3
+    b140eee0-05a7-45a4-9a69-66a1a0ef5719: Results # Results
     bd3677cb-49d9-4b08-b910-8746c21c75de: 'About Page' # About Page
     be6628a8-554b-4e47-9cf8-bd40a560a40d: Postcode # Postcode
     c472333c-33e7-43a6-a17b-bc16bb8892db: 'Address Line 4' # Address Line 4

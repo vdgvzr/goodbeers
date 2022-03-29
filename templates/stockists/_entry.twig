@@ -1,6 +1,8 @@
 {% extends 'index.twig' %}
 
 {% block content %}
+    {% set beers = entry.beersStocked %}
+
     <div class="container">
         <div class="content-column">
             <div class="my-auto text-white text-center">
@@ -15,6 +17,10 @@
                 <p class="card-text">{{ entry.addressLine4 }}</p>
 
                 <p class="card-text">{{ entry.postcode }}</p>
+
+                {% for beer in beers %}
+                    <a href="{{ beer.slug }}" class="card-text">{{ beer.beerName }}</a>
+                {% endfor %}
             </div>
         </div>
     </div>
