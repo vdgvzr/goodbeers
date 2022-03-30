@@ -1,6 +1,6 @@
 siteUid: null
 sortOrder: 3
-template: contact.twig
+template: contact/contact.twig
 uriParts:
   - contact
 uriPattern: contact

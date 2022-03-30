@@ -1,0 +1,76 @@
+{% extends "index.twig" %}
+
+{% block content %}
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 text-white">
+                        {% macro errorList(errors) %}
+                            {% if errors %}
+                                {{ ul(errors, {class: 'errors'}) }}
+                            {% endif %}
+                        {% endmacro %}
+
+                        {% set message = message ?? null %}
+
+                        <form method="post" action="" accept-charset="UTF-8">
+                            {{ csrfInput() }}
+                            {{ actionInput('contact-form/send') }}
+                            {{ redirectInput('contact/thanks') }}
+
+                            <p><label for="from-name">First Name</label></p>
+                            {{ input('text', 'fromName', message.fromName ?? '', {
+                                id: 'from-name',
+                                autocomplete: 'name',
+                            }) }}
+                            {{ message ? _self.errorList(message.getErrors('fromName')) }}
+
+                            <p><label for="from-surname">Surname</label></p>
+                            {{ input('text', 'fromSurname', message.fromSurname ?? '', {
+                                id: 'from-surname',
+                                autocomplete: 'surname',
+                            }) }}
+                            {{ message ? _self.errorList(message.getErrors('fromSurname')) }}
+
+                            <p><label for="from-email">Your Email</label></p>
+                            {{ input('email', 'fromEmail', message.fromEmail ?? '', {
+                                id: 'from-email',
+                                autocomplete: 'email',
+                            }) }}
+                            {{ message ? _self.errorList(message.getErrors('fromEmail')) }}
+
+                            <p><label for="subject">Subject</label></p>
+
+                            <select name="subject" id="subject">
+                                <option></option>
+                                <option value="Product information">Product information</option>
+                                <option value="Customer care enquiries">Customer care enquiries</option>
+                                <option value="Licensing and branding">Licensing and branding</option>
+                                <option value="General">General</option>
+                            </select>
+
+                            <p><label for="message">Message</label></p>
+                            {{ tag('textarea', {
+                                text: message.message ?? '',
+                                id: 'message',
+                                name: 'message',
+                                rows: 10,
+                                cols: 40,
+                            }) }}
+                            {{ message ? _self.errorList(message.getErrors('message')) }}
+
+                            {{ redirectInput('thanks?from={fromName}') }}
+
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

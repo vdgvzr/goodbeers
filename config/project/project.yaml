@@ -1,4 +1,4 @@
-dateModified: 1648640872
+dateModified: 1648661277
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -58,6 +58,12 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Goodbeers'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: webmaster@whitespacers.com
   redactor:
     edition: standard
     enabled: true
