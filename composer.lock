@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a8d9101a07472903940b77a2c37f96d",
+    "content-hash": "51a5ec05d2571c403521ef620044a3ed",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -481,6 +481,58 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
             "time": "2022-03-16T18:56:11+00:00"
+        },
+        {
+            "name": "craftcms/contact-form",
+            "version": "2.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/fd5843b119cfeb05ea7a3bb759b0eb0db9bfbfb8",
+                "reference": "fd5843b119cfeb05ea7a3bb759b0eb0db9bfbfb8",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Contact Form",
+                "handle": "contact-form",
+                "documentationUrl": "https://github.com/craftcms/contact-form/blob/v2/README.md",
+                "components": {
+                    "mailer": "craft\\contactform\\Mailer"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\contactform\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Add a simple contact form to your Craft CMS site",
+            "keywords": [
+                "cms",
+                "contact",
+                "craftcms",
+                "form",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/contact-form/issues?state=open",
+                "source": "https://github.com/craftcms/contact-form",
+                "docs": "https://github.com/craftcms/contact-form/blob/v2/README.md",
+                "rss": "https://github.com/craftcms/contact-form/commits/v2.atom"
+            },
+            "time": "2022-01-21T23:22:34+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -1840,11 +1892,11 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/93ebd0014cab80c4ea9f5e297ea48672f1b87706",
-                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/77a32518733312af16a44300404e945338981de3",
+                "reference": "77a32518733312af16a44300404e945338981de3",
                 "shasum": ""
             },
             "require": {
@@ -1872,7 +1924,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2022-01-04T19:58:01+00:00"
+            "time": "2022-03-15T21:29:03+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3838,11 +3890,11 @@
         },
         {
             "name": "voku/stringy",
-            "version": "6.5.2",
+            "version": "6.5.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Stringy/zipball/760438112f8696ba3d51a96896bc786d29a5f183",
-                "reference": "760438112f8696ba3d51a96896bc786d29a5f183",
+                "url": "https://api.github.com/repos/voku/Stringy/zipball/c453c88fbff298f042c836ef44306f8703b2d537",
+                "reference": "c453c88fbff298f042c836ef44306f8703b2d537",
                 "shasum": ""
             },
             "require": {
@@ -3861,12 +3913,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Stringy\\": "src/"
-                },
                 "files": [
                     "src/Create.php"
-                ]
+                ],
+                "psr-4": {
+                    "Stringy\\": "src/"
+                }
             },
             "license": [
                 "MIT"
@@ -3898,7 +3950,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2022-01-30T05:46:50+00:00"
+            "time": "2022-03-28T14:52:20+00:00"
         },
         {
             "name": "voku/urlify",

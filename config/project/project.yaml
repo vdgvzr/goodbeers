@@ -1,4 +1,4 @@
-dateModified: 1648591719
+dateModified: 1648640872
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -54,6 +54,10 @@ meta:
     efe6aa1d-51bd-4295-b506-04b372bd4b6c: 'Address Line 4' # Address Line 4
     fee8c7d0-c6d8-4b83-93f8-610209b7316a: Latitude # Latitude
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
