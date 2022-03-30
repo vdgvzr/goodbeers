@@ -21,7 +21,30 @@
                 {% for beer in beers %}
                     <a href="{{ beer.slug }}" class="card-text">{{ beer.beerName }}</a>
                 {% endfor %}
+
+                <div id="map"></div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        function initMap() {
+            const location = { lat: {{ entry.latitude }}, lng: {{ entry.longitude }} };
+            
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA26wiZoEeMSjknDUe0N_0cHaARYvHV1Uo&callback=initMap">
+    </script>
 {% endblock %}
