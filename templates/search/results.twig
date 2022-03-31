@@ -15,7 +15,7 @@
 
                         <ul class="list-unstyled">
                             {% for stockist in stockists %}
-                                <li><a class="link-unstyled btn btn-light mb-4" href="{{ stockist.slug }}">{{ stockist.businessName }}</a></li>
+                                <li><a class="btn btn-light mb-4" href="{{ stockist.slug }}">{{ stockist.businessName }}</a></li>
                             {% endfor %}
                         </ul>
                     {% else %}
