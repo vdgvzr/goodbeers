@@ -28,7 +28,8 @@
                                     <label class="mb-2" for="q">Search by product:</label>
 
                                     <select class="mb-2 form-control" type="search" name="q">
-                                            <option></option>
+                                        <option></option>
+                                        
                                         {% for product in products %}
                                             <option value="{{ product.beerName }}">{{ product.beerName }}</option>
                                         {% endfor %}
