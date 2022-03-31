@@ -99,7 +99,11 @@ ul {
     display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
+    .hero h1 {
+        font-size: 1em;
+    }
+
     .footer-text {
         font-size: 8px;
     }

@@ -23,54 +23,63 @@
                             {{ actionInput('contact-form/send') }}
                             {{ redirectInput('contact/thanks') }}
 
-                            <p><label class="mt-3" for="from-name">First Name</label></p>
-                            {{ input('text', 'fromName', message.fromName ?? '', {
-                                id: 'from-name',
-                                autocomplete: 'name',
-                            }) }}
-                            {{ message ? _self.errorList(message.getErrors('fromName')) }}
+                            <div class="form-group">
+                                <p><label class="mt-3" for="from-name">First Name</label></p>
 
-                            <p><label class="mt-3" for="from-surname">Surname</label></p>
-                            {{ input('text', 'fromSurname', message.fromSurname ?? '', {
-                                id: 'from-surname',
-                                autocomplete: 'surname',
-                            }) }}
-                            {{ message ? _self.errorList(message.getErrors('fromSurname')) }}
+                                
+                                {{ input('text', 'fromName', message.fromName ?? '', {
+                                    class: 'form-control',
+                                    id: 'from-name',
+                                    autocomplete: 'name',
+                                }) }}
+                                {{ message ? _self.errorList(message.getErrors('fromName')) }}
+                                
 
-                            <p><label class="mt-3" for="from-email">Your Email</label></p>
-                            {{ input('email', 'fromEmail', message.fromEmail ?? '', {
-                                id: 'from-email',
-                                autocomplete: 'email',
-                            }) }}
-                            {{ message ? _self.errorList(message.getErrors('fromEmail')) }}
+                                <p><label class="mt-3" for="from-surname">Surname</label></p>
+                                {{ input('text', 'fromSurname', message.fromSurname ?? '', {
+                                    class: 'form-control',
+                                    id: 'from-surname',
+                                    autocomplete: 'surname',
+                                }) }}
+                                {{ message ? _self.errorList(message.getErrors('fromSurname')) }}
 
-                            <p><label class="mt-3" for="subject">Subject</label></p>
+                                <p><label class="mt-3" for="from-email">Your Email</label></p>
+                                {{ input('email', 'fromEmail', message.fromEmail ?? '', {
+                                    class: 'form-control',
+                                    id: 'from-email',
+                                    autocomplete: 'email',
+                                }) }}
+                                {{ message ? _self.errorList(message.getErrors('fromEmail')) }}
 
-                            <select name="subject" id="subject">
-                                <option></option>
-                                <option value="Product information">Product information</option>
-                                <option value="Customer care enquiries">Customer care enquiries</option>
-                                <option value="Licensing and branding">Licensing and branding</option>
-                                <option value="General">General</option>
-                            </select>
+                                <p><label class="mt-3" for="subject">Subject</label></p>
 
-                            <p><label class="mt-3" for="message">Message</label></p>
-                            {{ tag('textarea', {
-                                text: message.message ?? '',
-                                id: 'message',
-                                name: 'message',
-                                rows: 10,
-                                cols: 40,
-                            }) }}
-                            {{ message ? _self.errorList(message.getErrors('message')) }}
+                                <select class="form-control" name="subject" id="subject">
+                                    <option></option>
+                                    <option value="Product information">Product information</option>
+                                    <option value="Customer care enquiries">Customer care enquiries</option>
+                                    <option value="Licensing and branding">Licensing and branding</option>
+                                    <option value="General">General</option>
+                                </select>
 
-                            {{ redirectInput('thanks?from={fromName}') }}
+                                <p><label class="mt-3" for="message">Message</label></p>
+                                {{ tag('textarea', {
+                                    text: message.message ?? '',
+                                    class: 'form-control',
+                                    id: 'message',
+                                    name: 'message',
+                                    rows: 10,
+                                    cols: 40,
+                                }) }}
+                                {{ message ? _self.errorList(message.getErrors('message')) }}
 
-                            <br><button class="btn btn-light" type="submit">Send</button>
+                                {{ redirectInput('thanks?from={fromName}') }}
+
+                                <br><button class="btn btn-light form-control w-50" type="submit">Send</button>
+                            </div>
                         </form>
                     </div>
                     
-                    <div class="col-md-6 col-sm-12 my-auto">
+                    <div class="col-md-6 col-sm-12 my-auto mt-5">
                         <h6 class="card-subtitle text-warning mb-2">Find us:</h6>
 
                         <p>

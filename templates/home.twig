@@ -6,25 +6,21 @@
     <section class="hero" style="background-image: linear-gradient(to top, transparent, black), url('{{ image.url }}')">
         <div class="hero-content">
             <div class="container">
-                <div class="row">
-                    <div class="col-3"></div>
-
-                    <div class="col-6">
-                        <h1>{{ entry.heroTitle }}</h1>
+                <div class="content-column--narrow">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>{{ entry.heroTitle }}</h1>
+                        </div>
                     </div>
-
-                    <div class="col-3"></div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-4"></div>
-
-                <div class="col-4 p-4 home-text text-center">
-                    <p class="text-white">{{ entry.homeText }}</p>
+            
+            <div class="content-column--narrow">
+                <div class="row">
+                    <div class="col-md-12 p-4 home-text text-center">
+                        <p class="text-white">{{ entry.homeText }}</p>
+                    </div>
                 </div>
-
-                <div class="col-4"></div>
             </div>
         </div>
     </section>
