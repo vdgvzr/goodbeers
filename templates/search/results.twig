@@ -6,10 +6,13 @@
             <div class="content-column text-center text-white">
                 <h1 class="mb-5 text-warning">Search Results</h1>
 
-                {% set query = craft.app.request.getQueryParam('q') %}
-                {% set stockists = craft.entries.search(query).all() %}
+                {% set nQuery = craft.app.request.getQueryParam('q') %}
+                {% set stockists = craft.entries.section('stockists').search(nQuery) %}
 
-                {% if query %}
+                {% set bQuery = craft.app.request.getQueryParam('b') %}
+                {% set products = craft.entries.section('products').search(bQuery) %}
+
+                {% if nQuery %}
                     {% if stockists|length %}
                         <p>{{ stockists|length }} result{% if stockists|length > 1 %}s{% endif %}:</p>
 
@@ -19,12 +22,23 @@
                             {% endfor %}
                         </ul>
                     {% else %}
-                        <p>Your search for “{{ query }}” didn’t return any results.</p>
+                        <p>Your search for “{{ nQuery }}” didn’t return any results.</p>
                     {% endif %}
+                {% elseif bQuery %}
+                    <p>{{ bQuery }} is stocked at:</p>
+
+                    <ul class="list-unstyled">
+                        {% for product in products %}
+                            {% for stockedAt in product.stockedAt.all() %}
+                                <li><a class="btn btn-light mb-4" href="{{ stockedAt.url }}">{{ stockedAt.businessName }}</a></li>
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
                 {% else %}
-                        <p>Please fill in one of the search fields</p>
+                    <p>Please fill in one of the search fields</p>
                 {% endif %}
             </div>
         </div>
     </section>
 {% endblock %}
+

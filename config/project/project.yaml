@@ -1,4 +1,4 @@
-dateModified: 1648715981
+dateModified: 1648733164
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -42,6 +42,7 @@ meta:
     b140eee0-05a7-45a4-9a69-66a1a0ef5719: Results # Results
     bd3677cb-49d9-4b08-b910-8746c21c75de: 'About Page' # About Page
     be6628a8-554b-4e47-9cf8-bd40a560a40d: Postcode # Postcode
+    c9b639f7-ab5a-4128-a737-f296bb833ddf: 'Stocked At' # Stocked At
     c472333c-33e7-43a6-a17b-bc16bb8892db: 'Address Line 4' # Address Line 4
     cb39b36a-8a23-4503-9931-4532af39ec4c: About # About
     d2da1be4-085a-478a-82c1-62de45529f0e: 'About Text' # About Text

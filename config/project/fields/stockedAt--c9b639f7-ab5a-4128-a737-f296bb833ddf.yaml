@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ab9eeee8-dea7-4ca9-9b2f-6d69b49f858e # Products
+handle: stockedAt
+instructions: ''
+name: 'Stocked At'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:60b20676-275f-4452-a23b-f1ca298af319' # Stockists
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
