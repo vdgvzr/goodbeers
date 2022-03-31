@@ -3,22 +3,26 @@
 {% block content %}
     {% set products = craft.entries.section('products').all() %}
 
-    <section>
-        <div class="container hero-conent">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-            {% for product in products %}
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ product.beerName }}</h5>
+    <section class="section">
+        <div class="container">
+            <div class="content-column">
+                <h1 class="mb-5 text-warning text-center">Our Products</h1>
 
-                            <p>{{ product.abv }}</p>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card mx-3 my-5 py-2 border-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ product.beerName }}</h5>
 
-                            <a href="{{ product.slug }}" class="card-link">More Info</a>
+                                    <p>{{ product.abv }}</p>
+                                    
+                                    <a href="{{ product.slug }}" class="btn btn-light card-link link-unstyled">More Info</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
         </div>
     </section>

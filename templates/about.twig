@@ -1,18 +1,12 @@
 {% extends "index.twig" %}
 
 {% block content %}
-    <section class="hero">
-        <div class="hero-content">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-3"></div>
+    <section class="section">
+        <div class="container">
+            <div class="content-column--narrow">
+                <h1 class="mb-5 text-warning text-center">About Us</h1>
 
-                    <div class="col-6">
-                        <p class="text-white">{{ entry.aboutText }}</p>
-                    </div>
-
-                    <div class="col-3"></div>
-                </div>
+                <p class="">{{ entry.aboutText }}</p>
             </div>
         </div>
     </section>

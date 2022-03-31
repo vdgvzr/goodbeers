@@ -1,35 +1,45 @@
 {% extends "index.twig" %}
 
 {% block content %}
-    <section>
-        {% set products = craft.entries.section('products').all() %}
+    {% set products = craft.entries.section('products').all() %}
 
-        <div class="container hero-content">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+    <section class="section">
+        <div class="container">
+            <div class="content-column--narrow">
                 <div class="my-auto text-white text-center">
-                    <h1>Search for a stockist</h1>
+                    <h1 class="mb-5 text-warning text-center">Search for a stockist</h1>
 
-                    <div>
-                        <form action="results">
-                            <label for="q">Search by name:</label>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-3"></div>
+                        
+                        <div class="col-md-4 col-sm-6">
+                            <form action="results">
+                                <div class="form-group">
+                                    <label class="mb-2" for="q">Search by name:</label>
 
-                            <input type="search" name="q">
-                            
-                            <input type="submit" value="Go">
-                        </form>
+                                    <input class="mb-2 form-control" type="search" name="q">
+                                    
+                                    <input hidden type="submit" value="Go">
+                                </div>
+                            </form>
 
-                        <form action="results">
-                            <label for="q">Search by product:</label>
+                            <form action="results">
+                                <div class="form-group">
+                                    <label class="mb-2" for="q">Search by product:</label>
 
-                            <select type="search" name="q">
-                                    <option></option>
-                                {% for product in products %}
-                                    <option value="{{ product.beerName }}">{{ product.beerName }}</option>
-                                {% endfor %}
-                            </select>
+                                    <select class="mb-2 form-control" type="search" name="q">
+                                            <option></option>
+                                        {% for product in products %}
+                                            <option value="{{ product.beerName }}">{{ product.beerName }}</option>
+                                        {% endfor %}
+                                    </select>
 
-                            <input type="submit" value="Go">
-                        </form>
+                                    <input hidden type="submit" value="Go">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-4 col-sm-3"></div>
                     </div>
                 </div>
             </div>

@@ -3,29 +3,51 @@
 {% block content %}
     {% set beers = entry.beersStocked %}
 
-    <div class="container">
-        <div class="content-column">
-            <div class="my-auto text-white text-center">
-                <h1 class=" my-auto">{{ entry.businessName }}</h1>
+    <section class="section">
+        <div class="container">
+            <div class="content-column text-center">
+                <div class="my-auto text-white">
+                    <h1 class="mb-5 text-warning">{{ entry.businessName }}</h1>
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 my-auto">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6 class="text-warning mb-2">Address:</h6>
 
-                <p class="card-text">{{ entry.addressLine1 }}</p>
+                                    <p class="card-text">{{ entry.addressLine1 }}</p>
 
-                <p class="card-text">{{ entry.addressLine2 }}</p>
+                                    <p class="card-text">{{ entry.addressLine2 }}</p>
 
-                <p class="card-text">{{ entry.addressLine3 }}</p>
+                                    <p class="card-text">{{ entry.addressLine3 }}</p>
 
-                <p class="card-text">{{ entry.addressLine4 }}</p>
+                                    <p class="card-text">{{ entry.addressLine4 }}</p>
 
-                <p class="card-text">{{ entry.postcode }}</p>
+                                    <p class="card-text">{{ entry.postcode }}</p>
+                                </div>
 
-                {% for beer in beers %}
-                    <a href="{{ beer.slug }}" class="card-text">{{ beer.beerName }}</a>
-                {% endfor %}
+                                <div class="col-6">
+                                    <h6 class="text-warning mb-2">In Stock:</h6>
 
-                <div id="map"></div>
+                                    <ul class="list-unstyled">
+                                        {% for beer in beers %}
+                                            <li>
+                                                <a href="{{ beer.slug }}" class="link-unstyled">{{ beer.beerName }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 {% endblock %}
 
 {% block js %}

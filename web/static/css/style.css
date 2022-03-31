@@ -64,6 +64,12 @@ body, html {
     color: white;
 }
 
+.content-column--narrow {
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 0 40px;
+}
+
 .content-column {
     margin: 0 auto;
     max-width: 1500px;
@@ -72,7 +78,6 @@ body, html {
 
 #map {
     height: 400px;
-    width: 50%;
 }
 
 .footer{
@@ -84,6 +89,14 @@ body, html {
 /* Misc --------------------- */
 ul {
     list-style-type: none;
+}
+
+.section {
+    padding: 3em 0;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
 }
 
 @media screen and (max-width: 480px) {

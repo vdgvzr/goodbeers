@@ -1,26 +1,30 @@
 {% extends 'index.twig' %}
 
 {% block content %}
-    <div class="container text-white">
-        <h1>Search Results</h1>
+    <section class="section">
+        <div class="container">
+            <div class="content-column text-center text-white">
+                <h1 class="mb-5 text-warning">Search Results</h1>
 
-        {% set query = craft.app.request.getQueryParam('q') %}
-        {% set stockists = craft.entries.search(query).all() %}
+                {% set query = craft.app.request.getQueryParam('q') %}
+                {% set stockists = craft.entries.search(query).all() %}
 
-        {% if query %}
-            {% if stockists|length %}
-                <p>{{ stockists|length }} results:</p>
+                {% if query %}
+                    {% if stockists|length %}
+                        <p>{{ stockists|length }} result{% if stockists|length > 1 %}s{% endif %}:</p>
 
-                <ul>
-                    {% for stockist in stockists %}
-                        <li><a href="{{ stockist.slug }}">{{ stockist.businessName }}</a></li>
-                    {% endfor %}
-                </ul>
-            {% else %}
-                <p>Your search for “{{ query }}” didn’t return any results.</p>
-            {% endif %}
-        {% else %}
-                <p>Please fill in one of the search fields</p>
-        {% endif %}
-    </div>
+                        <ul class="list-unstyled">
+                            {% for stockist in stockists %}
+                                <li><a class="link-unstyled btn btn-light mb-4" href="{{ stockist.slug }}">{{ stockist.businessName }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>Your search for “{{ query }}” didn’t return any results.</p>
+                    {% endif %}
+                {% else %}
+                        <p>Please fill in one of the search fields</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
 {% endblock %}

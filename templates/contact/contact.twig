@@ -1,13 +1,17 @@
 {% extends "index.twig" %}
 
 {% block content %}
-    <section class="hero">
-        <div class="hero-content">
-            <div class="container text-center">
+            <div class="container text-white text-center">
                 <div class="row">
-                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <p>
+                            Goodbeers Inc.<br>
+                            35-41 Drymuir Road<br>
+                            Edinburgh EH16 1UU
+                        </p>
+                    </div>
 
-                    <div class="col-6 text-white">
+                    <div class="col-6">
                         {% macro errorList(errors) %}
                             {% if errors %}
                                 {{ ul(errors, {class: 'errors'}) }}
@@ -67,10 +71,6 @@
                             <button type="submit">Send</button>
                         </form>
                     </div>
-
-                    <div class="col-3"></div>
                 </div>
             </div>
-        </div>
-    </section>
 {% endblock %}
