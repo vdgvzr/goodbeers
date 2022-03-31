@@ -12,9 +12,6 @@
                 {% set bQuery = craft.app.request.getQueryParam('b') %}
                 {% set products = craft.entries.section('products').search(bQuery) %}
 
-                {% set lQuery = craft.app.request.getQueryParam('l') %}
-                {% set stockists = craft.entries.section('products').search(bQuery) %}
-
                 {% if nQuery %}
                     {% if stockists|length %}
                         <p>{{ stockists|length }} result{% if stockists|length > 1 %}s{% endif %}:</p>
