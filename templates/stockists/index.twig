@@ -15,9 +15,9 @@
                         <div class="col-md-4 col-sm-6">
                             <form action="results">
                                 <div class="form-group">
-                                    <label class="mb-2" for="q">Search by name:</label>
+                                    <label class="mb-2" for="n">Search by name:</label>
 
-                                    <input class="mb-2 form-control" type="search" name="q">
+                                    <input class="mb-2 form-control" type="search" name="n">
                                     
                                     <input hidden type="submit" value="Go">
                                 </div>
@@ -35,6 +35,16 @@
                                         {% endfor %}
                                     </select>
 
+                                    <input hidden type="submit" value="Go">
+                                </div>
+                            </form>
+
+                            <form action="results">
+                                <div class="form-group">
+                                    <label class="mb-2" for="l">Search by location:</label>
+
+                                    <input class="mb-2 form-control" type="search" name="l">
+                                    
                                     <input hidden type="submit" value="Go">
                                 </div>
                             </form>

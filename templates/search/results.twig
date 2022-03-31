@@ -6,11 +6,14 @@
             <div class="content-column text-center text-white">
                 <h1 class="mb-5 text-warning">Search Results</h1>
 
-                {% set nQuery = craft.app.request.getQueryParam('q') %}
+                {% set nQuery = craft.app.request.getQueryParam('n') %}
                 {% set stockists = craft.entries.section('stockists').search(nQuery) %}
 
                 {% set bQuery = craft.app.request.getQueryParam('b') %}
                 {% set products = craft.entries.section('products').search(bQuery) %}
+
+                {% set lQuery = craft.app.request.getQueryParam('l') %}
+                {% set stockists = craft.entries.section('products').search(bQuery) %}
 
                 {% if nQuery %}
                     {% if stockists|length %}
