@@ -41,9 +41,21 @@
                         </div>
 
                         <div class="col-md-4 col-sm-3"></div>
+
+                        <p class="mb-2" for="b">Search by location:</p>
+                        <div class="col-md-12 text-black">
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="static/js/stockistData.js"></script>
+
+        <script src="static/js/locator.js"></script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA26wiZoEeMSjknDUe0N_0cHaARYvHV1Uo&callback=initMap">
+        </script>
     </section>
 {% endblock %}
