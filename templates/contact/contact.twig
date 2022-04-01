@@ -10,6 +10,7 @@
                     <div class="col-md-6 col-sm-12">
                         <h6 class="card-subtitle text-warning mb-3">Contact form:</h6>
 
+                        <!-- Display form validation errors-->
                         {% macro errorList(errors) %}
                             {% if errors %}
                                 {{ ul(errors, {class: 'errors'}) }}

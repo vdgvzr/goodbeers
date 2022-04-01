@@ -1,3 +1,4 @@
+// Set array variable for stockist data to be used in locator.js
 let stockists = [
     {
         "name": "Papa Johns",

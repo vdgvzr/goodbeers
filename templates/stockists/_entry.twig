@@ -52,10 +52,17 @@
 
 {% block js %}
     <script>
+        // As with locator.js, map will be initialised with the coordinates of the individual stockist entry
+
+        /* 
+            Note - js would have been put in a separate file, however I don't know yet if it's possible to pass
+            the variables from the html 'set' template tag through to a javascript file.
+        */ 
         function initMap() {
             const location = { lat: {{ entry.latitude }}, lng: {{ entry.longitude }} };
             
             const map = new google.maps.Map(document.getElementById("map"), {
+                // Zoom into localised area
                 zoom: 10,
                 center: location,
             });

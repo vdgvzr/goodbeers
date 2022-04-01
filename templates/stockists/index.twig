@@ -1,6 +1,7 @@
 {% extends "index.twig" %}
 
 {% block content %}
+    <!-- Set products variable from every product craft entry to be used in loop -->
     {% set products = craft.entries.section('products').all() %}
 
     <section class="section">
@@ -9,51 +10,52 @@
                 <div class="my-auto text-white text-center">
                     <h1 class="mb-5 text-warning text-center">Search for a stockist</h1>
 
-                    <div class="row">
-                        <div class="col-md-4 col-sm-3"></div>
+                    <div class="text-center">
+
+                        <!-- Forms will send input data to results.html -->
+                        <form action="results">
+                            <div class="form-group">
+                                <label class="mb-2" for="n">Search by name:</label>
+
+                                <input class="mb-2 form-control w-50 mx-auto" type="search" name="n">
+                                
+                                <input hidden type="submit" value="Go">
+                            </div>
+                        </form>
                         
-                        <div class="col-md-4 col-sm-6">
-                            <form action="results">
-                                <div class="form-group">
-                                    <label class="mb-2" for="n">Search by name:</label>
+                        <form action="results">
+                            <div class="form-group">
+                                <label class="mb-2" for="b">Search by product:</label>
 
-                                    <input class="mb-2 form-control" type="search" name="n">
+                                <select class="mb-2 form-control w-50 mx-auto" type="search" name="b">
+                                    <option></option>
                                     
-                                    <input hidden type="submit" value="Go">
-                                </div>
-                            </form>
+                                    <!-- Loop through products variable to display data set -->
+                                    {% for product in products %}
+                                        <option value="{{ product.beerName }}">{{ product.beerName }}</option>
+                                    {% endfor %}
+                                </select>
 
-                            <form action="results">
-                                <div class="form-group">
-                                    <label class="mb-2" for="b">Search by product:</label>
+                                <input hidden type="submit" value="Go">
+                            </div>
+                        </form>
+                    </div>
 
-                                    <select class="mb-2 form-control" type="search" name="b">
-                                        <option></option>
-                                        
-                                        {% for product in products %}
-                                            <option value="{{ product.beerName }}">{{ product.beerName }}</option>
-                                        {% endfor %}
-                                    </select>
+                    <p class="mb-2" for="b">Search by location:</p>
 
-                                    <input hidden type="submit" value="Go">
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="col-md-4 col-sm-3"></div>
-
-                        <p class="mb-2" for="b">Search by location:</p>
-                        <div class="col-md-12 text-black">
-                            <div id="map"></div>
-                        </div>
+                    <!-- Display map -->
+                    <div class="col-md-12 text-black">
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
         </div>
+
         <script src="static/js/stockistData.js"></script>
 
         <script src="static/js/locator.js"></script>
 
+        <!-- Access google maps api with api key. Src will initialise the map in locator.js -->
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA26wiZoEeMSjknDUe0N_0cHaARYvHV1Uo&callback=initMap">
         </script>

@@ -1,14 +1,17 @@
 {% extends "index.twig" %}
 
 {% block content %}
+    <!-- Set the image variable from the single craft uploads entry -->
     {% set image = entry.heroImage.one() %}
 
+    <!-- Section uses image url to set background image -->
     <section class="hero" style="background-image: linear-gradient(to top, transparent, black), url('{{ image.url }}')">
         <div class="hero-content">
             <div class="container">
                 <div class="content-column--narrow">
                     <div class="row">
                         <div class="col-md-12">
+                            <!-- Site uses template tags to display data in html from craft entries -->
                             <h1>{{ entry.heroTitle }}</h1>
                         </div>
                     </div>

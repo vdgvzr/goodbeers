@@ -9,23 +9,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link {% if craft.app.request.url == "/" %}active{% endif %}" href="/">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact Us</a>
+                    <a class="nav-link {% if craft.app.request.url == "/contact" %}active{% endif %}" href="contact">Contact Us</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="about">About Us</a>
+                    <a class="nav-link {% if craft.app.request.url == "/about" %}active{% endif %}" href="about">About Us</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="products">Our Products</a>
+                    <a class="nav-link {% if craft.app.request.url == "/products" %}active{% endif %}" href="products">Our Products</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="stockists">Stockists</a>
+                    <a class="nav-link {% if craft.app.request.url == "/stockists" %}active{% endif %}" href="stockists">Stockists</a>
                 </li>
             </ul>
         </div>

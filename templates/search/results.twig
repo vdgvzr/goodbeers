@@ -6,12 +6,21 @@
             <div class="content-column text-center text-white">
                 <h1 class="mb-5 text-warning">Search Results</h1>
 
+                <!-- 
+                    Note - I have made both products and stockists relational to each other in craft,
+                    I'm sure there is a way to search through the stockist's entry field for product name,
+                    however I managed to make it work this way, although it is a bit clunky.
+                -->
+
+                <!-- Set the search query for the stockist name form -->
                 {% set nQuery = craft.app.request.getQueryParam('n') %}
                 {% set stockists = craft.entries.section('stockists').search(nQuery) %}
 
+                <!-- Set the search query for the product name form, which will return a list of stocksts -->
                 {% set bQuery = craft.app.request.getQueryParam('b') %}
                 {% set products = craft.entries.section('products').search(bQuery) %}
-
+                
+                <!-- Nested if statements which will display filtered search results -->
                 {% if nQuery %}
                     {% if stockists|length %}
                         <p>{{ stockists|length }} result{% if stockists|length > 1 %}s{% endif %}:</p>
