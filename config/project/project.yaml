@@ -1,4 +1,4 @@
-dateModified: 1648986961
+dateModified: 1649003405
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -69,7 +69,7 @@ plugins:
       prependSender: 'On behalf of'
       prependSubject: 'New message from Goodbeers'
       successFlashMessage: 'Your message has been sent.'
-      toEmail: shaunlindsley@gmail.com
+      toEmail: webmaster@whitespacers.com
   contact-form-honeypot:
     edition: standard
     enabled: true
