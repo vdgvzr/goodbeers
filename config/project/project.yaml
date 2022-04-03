@@ -1,4 +1,4 @@
-dateModified: 1648733164
+dateModified: 1648986961
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -13,6 +13,7 @@ meta:
     2f6b26d5-2b4f-4b5c-8f8d-763b90ed0eee: 'Home Text' # Home Text
     4e7404e0-7022-4818-8d11-4ffc66b384c4: Longitude # Longitude
     4f86acec-2e17-45fe-b9a1-441f3a9bcb23: Notes # Notes
+    5eec94d0-81db-4226-baa2-11f6535a2bd3: Thanks # Thanks
     6d6752d8-ce94-479f-930c-20cd4bbfd564: Beer # Beer
     6efbbb72-054e-4a73-8d4d-088e14e3d71e: Results # Results
     8fc35b22-8fcb-4196-b4ff-2256d808ac48: 'Address Line 1' # Address Line 1
@@ -22,6 +23,7 @@ meta:
     36ee42f8-bd2f-4175-966b-f760864c5f63: Latitude # Latitude
     40e0c894-65a1-41b1-9c36-a7023d0d9939: Formats # Formats
     60b20676-275f-4452-a23b-f1ca298af319: Stockists # Stockists
+    77f813cd-9a90-4e8e-9354-fd302a2ebea3: Contact # Contact
     82bbc307-b58a-43ff-8e42-4b79c7d48152: 'Address Line 3' # Address Line 3
     89c3f1d4-c85c-4c34-aca1-6b0942d38a0a: Formats # Formats
     92b3ebeb-ebb3-4e3b-85a8-f05acab94062: 'Beer Name' # Beer Name
@@ -29,6 +31,7 @@ meta:
     179f0ea6-bca7-43ae-add7-7648376d300d: 'Hero Image' # Hero Image
     0538fb61-54f5-42ee-b316-03f27084d446: Uploads # Uploads
     641e13f3-9958-42c0-88cb-a2f2e7fa7623: Products # Products
+    1110b0c6-dace-4f16-9d5f-ce0e942206bb: Contact # Contact
     001221df-1213-4667-90cf-4e5cef5c3883: Goodbeers # Goodbeers
     5922fdec-bff9-41b0-add7-f3c5f3be524e: ABV # ABV
     22973b4e-37e3-464f-a784-65614b55a523: 'Beers Stocked' # Beers Stocked
@@ -49,6 +52,7 @@ meta:
     d9148d8f-9152-4bd3-9454-6458ce2f4f17: Stockists # Stockists
     d443204d-b01f-4a2a-bc62-3a486242edc2: Goodbeers # Goodbeers
     d784302c-b13c-4581-9bbf-3689c3f72723: Home # Home
+    dc71cf68-2bdb-42f4-beb6-e2e5da31ae85: Thanks # Thanks
     e05f19a6-0f3f-4fc4-8bbd-b4f5b1f6b6d3: About # About
     e3f066a4-0402-4ac2-9111-287836c1f133: Notes # Notes
     eb37c702-c55e-4a89-8d81-aee5cd0999dc: 'Address Line 2' # Address Line 2
@@ -65,7 +69,13 @@ plugins:
       prependSender: 'On behalf of'
       prependSubject: 'New message from Goodbeers'
       successFlashMessage: 'Your message has been sent.'
-      toEmail: webmaster@whitespacers.com
+      toEmail: shaunlindsley@gmail.com
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: spam
   redactor:
     edition: standard
     enabled: true
