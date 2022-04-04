@@ -1,6 +1,0 @@
-siteUid: null
-sortOrder: 6
-template: contact/thanks.twig
-uriParts:
-  - thanks
-uriPattern: thanks

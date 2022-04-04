@@ -22,7 +22,7 @@
                         <form method="POST" action="" accept-charset="UTF-8">
                             {{ csrfInput() }}
                             {{ actionInput('contact-form/send') }}
-                            {{ redirectInput('contact/thanks') }}
+                            {{ redirectInput('contact/_thanks') }}
 
                             {% if craft.app.session.hasFlash('notice') %}
                                 <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
@@ -66,7 +66,7 @@
                                 }) }}
                                 {{ message ? _self.errorList(message.getErrors('message')) }}
 
-                                {{ redirectInput('/thanks?from={fromName}') }}
+                                {{ redirectInput('/_thanks?from={fromName}') }}
 
                                 <br><button class="btn btn-light form-control w-50" type="submit">Send</button>
                             </div>
