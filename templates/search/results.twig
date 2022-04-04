@@ -14,11 +14,11 @@
 
                 <!-- Set the search query for the stockist name form -->
                 {% set nQuery = craft.app.request.getQueryParam('n') %}
-                {% set stockists = craft.entries.section('stockists').search(nQuery) %}
+                {% set stockists = craft.entries.section('stockist').search(nQuery) %}
 
                 <!-- Set the search query for the product name form, which will return a list of stocksts -->
                 {% set bQuery = craft.app.request.getQueryParam('b') %}
-                {% set products = craft.entries.section('products').search(bQuery) %}
+                {% set products = craft.entries.section('product').search(bQuery) %}
                 
                 <!-- Nested if statements which will display filtered search results -->
                 {% if nQuery %}

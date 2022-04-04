@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d064f0cc-5bcb-4623-88cc-905ffe15c5fc # Top Level
+handle: footerNavigation
+instructions: ''
+name: 'Footer Navigation'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_footernavigation}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

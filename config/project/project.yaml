@@ -1,4 +1,4 @@
-dateModified: 1649073561
+dateModified: 1649077455
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: Goodbeers
@@ -6,36 +6,50 @@ email:
 meta:
   __names__:
     0a52d1f1-197c-4c0a-a6db-69018f4353e1: Common # Common
+    0d85d436-16f4-46a0-8133-b3210e17f888: Stockists # Stockists
     0debd8c1-3838-4762-853d-ce3e6dc29aff: 'Address Line 2' # Address Line 2
     0e7b6f1d-8852-422b-a217-3ac3cd450215: 'Hero Title' # Hero Title
     1a820693-ca56-4744-8239-7cd3fa85ce9d: Postcode # Postcode
     1f37ccb9-6638-482f-8e54-c2c3330799e9: 'Address Line 1' # Address Line 1
+    1fc0df53-06cc-4938-ae35-ec2db1a20368: Header # Header
     2f6b26d5-2b4f-4b5c-8f8d-763b90ed0eee: 'Home Text' # Home Text
+    3bc55f9e-8bec-437f-834e-4a6b5136e8aa: 'Link Destination' # Link Destination
+    4ad06b98-0126-45b5-9d06-127aff0b0c64: 'Terms and Conditions' # Terms and Conditions
     4e7404e0-7022-4818-8d11-4ffc66b384c4: Longitude # Longitude
     4f86acec-2e17-45fe-b9a1-441f3a9bcb23: Notes # Notes
+    5d57da24-10d2-4540-ad13-afbc19382e54: Navigation # Navigation
     5eec94d0-81db-4226-baa2-11f6535a2bd3: Thanks # Thanks
+    5fc6324b-bc38-4742-8192-e06a3b007157: 'Link Text' # Link Text
     6d6752d8-ce94-479f-930c-20cd4bbfd564: Beer # Beer
     6efbbb72-054e-4a73-8d4d-088e14e3d71e: Results # Results
     8fc35b22-8fcb-4196-b4ff-2256d808ac48: 'Address Line 1' # Address Line 1
+    8ff5d91f-bc06-4289-8505-f34582005215: 'Terms and Conditions' # Terms and Conditions
     9a42ca2a-2140-4bb9-959a-0b38b5135aa5: Longitude # Longitude
     14d9cf8b-728a-4578-bb54-b5861573e02c: Pairings # Pairings
     014ddf4d-4c06-4fe8-b8ed-3191a53fbf0a: 'Home Page' # Home Page
     36ee42f8-bd2f-4175-966b-f760864c5f63: Latitude # Latitude
     40e0c894-65a1-41b1-9c36-a7023d0d9939: Formats # Formats
-    60b20676-275f-4452-a23b-f1ca298af319: Stockists # Stockists
+    60b20676-275f-4452-a23b-f1ca298af319: Stockist # Stockist
     77f813cd-9a90-4e8e-9354-fd302a2ebea3: Contact # Contact
     82bbc307-b58a-43ff-8e42-4b79c7d48152: 'Address Line 3' # Address Line 3
     89c3f1d4-c85c-4c34-aca1-6b0942d38a0a: Formats # Formats
-    160e55f6-25ba-4d21-a6d7-52b34dbea2d6: Products # Products
+    95c85a5c-8226-4fcc-b45b-d0f7f02a0290: 'Footer Link' # Footer Link
+    160e55f6-25ba-4d21-a6d7-52b34dbea2d6: Product # Product
     179f0ea6-bca7-43ae-add7-7648376d300d: 'Hero Image' # Hero Image
+    241af208-3c9b-47af-8286-d13b1a82bcef: 'Link Text' # Link Text
+    392b639c-93bf-43b2-b2cb-c63408e6e197: Footer # Footer
     0538fb61-54f5-42ee-b316-03f27084d446: Uploads # Uploads
     641e13f3-9958-42c0-88cb-a2f2e7fa7623: Products # Products
+    666b0e9d-80d8-4681-97fd-22679c785f6b: Products # Products
     1110b0c6-dace-4f16-9d5f-ce0e942206bb: Contact # Contact
     001221df-1213-4667-90cf-4e5cef5c3883: Goodbeers # Goodbeers
     5922fdec-bff9-41b0-add7-f3c5f3be524e: ABV # ABV
     22973b4e-37e3-464f-a784-65614b55a523: 'Beers Stocked' # Beers Stocked
     257443c7-9a91-4a24-89c2-0607e7026ea7: Home # Home
     322807ae-44c8-457a-a5cc-7f5f5c926f2b: 'Business Name' # Business Name
+    480695d7-5f5b-4873-895a-80d7f0ca68f2: Stockists # Stockists
+    905754e3-0bc4-427a-b32a-2b8b1cefc290: Products # Products
+    4933244b-8fea-4df0-b225-cf83b5d9530c: 'Footer Navigation' # Footer Navigation
     a81c4e2e-fbff-48e0-8a5d-7c73a22ebf66: Pairings # Pairings
     ab9eeee8-dea7-4ca9-9b2f-6d69b49f858e: Products # Products
     ae71d09c-3bb9-4136-8afb-1d7ca8a8d9dd: Stockists # Stockists
@@ -47,6 +61,8 @@ meta:
     c9b639f7-ab5a-4128-a737-f296bb833ddf: 'Stocked At' # Stocked At
     c472333c-33e7-43a6-a17b-bc16bb8892db: 'Address Line 4' # Address Line 4
     cb39b36a-8a23-4503-9931-4532af39ec4c: About # About
+    cb318413-7992-4c32-96d1-79b46d44a53d: 'Link Destination' # Link Destination
+    d064f0cc-5bcb-4623-88cc-905ffe15c5fc: 'Top Level' # Top Level
     d2da1be4-085a-478a-82c1-62de45529f0e: 'About Text' # About Text
     d9148d8f-9152-4bd3-9454-6458ce2f4f17: Stockists # Stockists
     d443204d-b01f-4a2a-bc62-3a486242edc2: Goodbeers # Goodbeers
@@ -54,6 +70,7 @@ meta:
     dc71cf68-2bdb-42f4-beb6-e2e5da31ae85: Thanks # Thanks
     e05f19a6-0f3f-4fc4-8bbd-b4f5b1f6b6d3: About # About
     e3f066a4-0402-4ac2-9111-287836c1f133: Notes # Notes
+    e4df16f5-e367-49f2-b8b0-10b423dc7b0e: 'Nav Link' # Nav Link
     eb37c702-c55e-4a89-8d81-aee5cd0999dc: 'Address Line 2' # Address Line 2
     efe6aa1d-51bd-4295-b506-04b372bd4b6c: 'Address Line 4' # Address Line 4
     fee8c7d0-c6d8-4b83-93f8-610209b7316a: Latitude # Latitude

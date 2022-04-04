@@ -14,8 +14,11 @@
             </div>
 
             <div class="col-md-4 col-sm-12">
-                <a href="contact" class="link-unstyled {% if craft.app.request.url == "/contact" %}active{% endif %}">Contact</a><br>
-                <a href="terms-and-conditions" class="link-unstyled {% if craft.app.request.url == "/terms-and-conditions" %}active{% endif %}">Terms and Conditions</a>
+                {% for link in footer.footerNavigation %}
+                    {% set destination = link.linkDestination.one() %}
+
+                    <a href="{{ destination.slug }}" class="link-unstyled {% if craft.app.request.url == "/{{ destination.slug }}" %}active{% endif %}">{{ link.linkText }}</a><br>
+                {% endfor %}
             </div>
         </div>
     </div>

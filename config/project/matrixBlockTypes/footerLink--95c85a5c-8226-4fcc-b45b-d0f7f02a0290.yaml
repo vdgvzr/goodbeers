@@ -1,0 +1,72 @@
+field: 4933244b-8fea-4df0-b225-cf83b5d9530c # Footer Navigation
+fieldLayouts:
+  c0ac5aa0-e172-4ff4-9a6e-1f746fa956bd:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5fc6324b-bc38-4742-8192-e06a3b007157 # Link Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cb318413-7992-4c32-96d1-79b46d44a53d # Link Destination
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5fc6324b-bc38-4742-8192-e06a3b007157: # Link Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkText
+    instructions: ''
+    name: 'Link Text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cb318413-7992-4c32-96d1-79b46d44a53d: # Link Destination
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkDestination
+    instructions: ''
+    name: 'Link Destination'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: footerLink
+name: 'Footer Link'
+sortOrder: 1

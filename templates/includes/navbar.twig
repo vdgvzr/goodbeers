@@ -8,25 +8,13 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link {% if craft.app.request.url == "/" %}active{% endif %}" href="/">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link {% if craft.app.request.url == "/contact" %}active{% endif %}" href="contact">Contact Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link {% if craft.app.request.url == "/about" %}active{% endif %}" href="about">About Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link {% if craft.app.request.url == "/products" %}active{% endif %}" href="products">Our Products</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link {% if craft.app.request.url == "/stockists" %}active{% endif %}" href="stockists">Stockists</a>
-                </li>
+                {% for link in header.navigation %}
+                    {% set destination = link.linkDestination.one() %}
+                    
+                    <li class="nav-item">
+                        <a class="nav-link {% if craft.app.request.url == "{{ destination.slug }}" %}active{% endif %}" href="{{ destination.slug }}">{{ link.linkText }}</a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>

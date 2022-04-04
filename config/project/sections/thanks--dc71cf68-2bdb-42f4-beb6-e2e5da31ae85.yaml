@@ -6,7 +6,7 @@ propagationMethod: all
 siteSettings:
   d443204d-b01f-4a2a-bc62-3a486242edc2: # Goodbeers
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: contact/thanks.twig
+    uriFormat: thanks
 type: single
