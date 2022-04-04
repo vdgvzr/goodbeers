@@ -8,11 +8,14 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                {% set request = craft.app.request.url %}
+                
+
                 {% for link in header.navigation %}
                     {% set destination = link.linkDestination.one() %}
                     
                     <li class="nav-item">
-                        <a class="nav-link {% if craft.app.request.url == "{{ destination.slug }}" %}active{% endif %}" href="{{ destination.slug }}">{{ link.linkText }}</a>
+                        <a class="nav-link {% if request == link.linkActive %}active{% endif %}" href="{{ destination.slug }}">{{ link.linkText }}</a>
                     </li>
                 {% endfor %}
             </ul>
