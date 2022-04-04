@@ -7,7 +7,7 @@
         <div class="container">
             <div class="content-column--narrow text-center">
                 <div class="my-auto text-white">
-                    <h1 class="mb-5 text-warning">{{ entry.businessName }}</h1>
+                    <h1 class="mb-5 text-warning">{{ entry.title }}</h1>
                     
                     <div class="row">
                         <div class="col-md-12 my-auto">
@@ -32,7 +32,7 @@
                                     <ul class="list-unstyled">
                                         {% for beer in beers %}
                                             <li>
-                                                <a href="{{ beer.slug }}" class="link-unstyled">{{ beer.beerName }}</a>
+                                                <a href="{{ beer.slug }}" class="link-unstyled">{{ beer.title }}</a>
                                             </li>
                                         {% endfor %}
                                     </ul>

@@ -27,7 +27,7 @@
 
                         <ul class="list-unstyled">
                             {% for stockist in stockists %}
-                                <li><a class="btn btn-light mb-4" href="{{ stockist.slug }}">{{ stockist.businessName }}</a></li>
+                                <li><a class="btn btn-light mb-4" href="{{ stockist.slug }}">{{ stockist.title }}</a></li>
                             {% endfor %}
                         </ul>
                     {% else %}
@@ -39,7 +39,7 @@
                     <ul class="list-unstyled">
                         {% for product in products %}
                             {% for stockedAt in product.stockedAt.all() %}
-                                <li><a class="btn btn-light mb-4" href="{{ stockedAt.url }}">{{ stockedAt.businessName }}</a></li>
+                                <li><a class="btn btn-light mb-4" href="{{ stockedAt.url }}">{{ stockedAt.title }}</a></li>
                             {% endfor %}
                         {% endfor %}
                     </ul>

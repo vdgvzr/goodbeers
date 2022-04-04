@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: ''
-            label: Beer
+            label: Title
             max: null
             min: null
             name: null
@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 92b3ebeb-ebb3-4e3b-85a8-f05acab94062 # Beer Name
+            fieldUid: 92b3ebeb-ebb3-4e3b-85a8-f05acab94062
             instructions: null
             label: null
             required: false
@@ -83,7 +83,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: products
-hasTitleField: false
+hasTitleField: true
 name: Products
 section: 160e55f6-25ba-4d21-a6d7-52b34dbea2d6 # Products
 sortOrder: 1

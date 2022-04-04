@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 8
+sortOrder: 6
 template: contact/thanks.twig
 uriParts:
   - thanks

@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ec913814-e9b2-441c-8f96-168a25de9f7c # Business Name
+            fieldUid: ec913814-e9b2-441c-8f96-168a25de9f7c
             instructions: null
             label: null
             required: false
@@ -110,7 +110,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: stockists
-hasTitleField: false
+hasTitleField: true
 name: Stockists
 section: 60b20676-275f-4452-a23b-f1ca298af319 # Stockists
 sortOrder: 1

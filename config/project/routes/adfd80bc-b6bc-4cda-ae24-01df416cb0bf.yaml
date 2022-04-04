@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 3
+sortOrder: 5
 template: contact/contact.twig
 uriParts:
   - contact

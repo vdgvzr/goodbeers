@@ -9,4 +9,7 @@ siteSettings:
     hasUrls: true
     template: contact/contact.twig
     uriFormat: contact
-type: single
+structure:
+  maxLevels: null
+  uid: 7b15a35f-ea41-45c3-a75f-d9ddb25504c7
+type: structure
