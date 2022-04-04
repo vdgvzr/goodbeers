@@ -1,19 +1,20 @@
 columnSuffix: sxevaiiy
-contentColumnType: text
+contentColumnType: 'decimal(3,1)'
 fieldGroup: ab9eeee8-dea7-4ca9-9b2f-6d69b49f858e # Products
 handle: abv
 instructions: ''
 name: ABV
 searchable: false
 settings:
-  byteLimit: null
-  charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: null
-  uiMode: normal
+  decimals: '1'
+  defaultValue: null
+  max: 10
+  min: 0
+  prefix: null
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: '%'
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\PlainText
+type: craft\fields\Number

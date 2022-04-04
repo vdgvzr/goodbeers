@@ -1,0 +1,99 @@
+field: 89c3f1d4-c85c-4c34-aca1-6b0942d38a0a # Formats
+fieldLayouts:
+  7163daaa-105d-4386-8e58-c0f0c6adf01a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1ffaf3f6-9615-46a1-a01d-4a4d245e2ee1 # Format 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5d4e6c23-1e9c-4d3f-9e75-a2f51611e1f6 # Format 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ea22333f-a45c-4c53-b446-b8f8eff2aa7a # Format 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1ffaf3f6-9615-46a1-a01d-4a4d245e2ee1: # Format 1
+    columnSuffix: hywvciic
+    contentColumnType: text
+    fieldGroup: null
+    handle: format1
+    instructions: ''
+    name: 'Format 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5d4e6c23-1e9c-4d3f-9e75-a2f51611e1f6: # Format 2
+    columnSuffix: jyaekbdd
+    contentColumnType: text
+    fieldGroup: null
+    handle: format2
+    instructions: ''
+    name: 'Format 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ea22333f-a45c-4c53-b446-b8f8eff2aa7a: # Format 3
+    columnSuffix: pwvdlqsj
+    contentColumnType: text
+    fieldGroup: null
+    handle: format3
+    instructions: ''
+    name: 'Format 3'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: format
+name: Format
+sortOrder: 1

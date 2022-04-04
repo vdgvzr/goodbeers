@@ -4,13 +4,13 @@ let markers = [];
 let infoWindow;
 let locationSelect;
 
-// Initialise the map with the coordinates of Edinburgh
+// Initialise the map with the coordinates of Perth
 function initMap() {
-    let edinburgh = { lat: 55.95714408561746, lng: -3.1888611020565825 };
+    let perth = { lat: 56.39977181524455, lng: -3.4320877875404268 };
     map = new google.maps.Map(document.getElementById('map'), {
-        center: edinburgh,
+        center: perth,
         // Zoom in enough to show whole region
-        zoom: 8,
+        zoom: 7,
     });
     // Function call for stockist markers
     showStockistMarkers();

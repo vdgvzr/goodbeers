@@ -20,11 +20,15 @@
                     <div class="col-4 my-auto">
                         <h6 class="card-subtitle text-warning mb-2">ABV</h6>
 
-                        <p class="card-text">{{ entry.abv }}</p>
+                        <p class="card-text">{{ entry.abv }}%</p>
 
                         <h6 class="card-subtitle text-warning mb-2">Comes in:</h6>
 
-                        <p>{{ entry.formats }}</p>
+                        {% for option in entry.formats %}
+                            <ul class="list-unstyled">
+                                <li>{{ option }}</i>
+                            </ul>   
+                        {% endfor %}
                     </div>
                 </div>
             </div>
