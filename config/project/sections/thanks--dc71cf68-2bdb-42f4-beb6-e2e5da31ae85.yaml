@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: contact/_thanks.twig
-    uriFormat: _thanks
+    uriFormat: contact/_thanks
 type: single
